@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", function() {
   updateUserInfo();
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Call the function to show the popup when the page is loaded
+    openUpdatePopup();
+});
+
+function openUpdatePopup() {
+    // Your code to display the popup goes here
+    alert("This is your update popup!");
+}
+
 function updateUserInfo() {
   var userInfoDiv = document.getElementById("user-info");
 
