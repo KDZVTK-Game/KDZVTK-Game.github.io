@@ -7,7 +7,7 @@ function logout() {
     window.location.href = "dangnhap.html";
 }
 
-function createAccount() {
+function createAccount() { 
     let newGmail = document.getElementById("newGmail").value;
     let newPassword = document.getElementById("newPassword").value;
     let verificationCode = document.getElementById("verificationCode").value;
@@ -17,14 +17,7 @@ function createAccount() {
         alert("Tài khoản đã tồn tại");
         return false;
     }
-
-    // Kiểm tra mã dự phòng
-    let storedVerificationCode = localStorage.getItem(newGmail + "_verificationCode");
-    if (verificationCode !== storedVerificationCode) {
-        alert("Sai mã dự phòng");
-        return false;
-    }
-
+ 
     // Lưu tài khoản mới vào localStorage
     localStorage.setItem(newGmail, newPassword);
 
@@ -33,6 +26,7 @@ function createAccount() {
 
     alert("Tạo mới tài khoản thành công");
     return false;
+    
 }
 
 function displayAccountList() {
