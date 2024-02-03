@@ -7,11 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     openUpdatePopup();
 });
 
-function openUpdatePopup() {
-    // Your code to display the popup goes here
-    alert("This is your update popup!");
-}
-
 function updateUserInfo() {
   var userInfoDiv = document.getElementById("user-info");
 
