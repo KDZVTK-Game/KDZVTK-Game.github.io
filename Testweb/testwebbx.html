@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDZ Game Hay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .top-left-corner {
+            display: inline-block;
+            
+        }
+
+        .top-right-buttons {
+            display: inline-block;
+            
+        }
+
+        .game-chinh {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .game-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .game-box {
+            width: 30%;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .game-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .orange-text {
+            color: orange;
+            margin-bottom: 15px;
+        }
+
+        .user-info {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="orange-text">KDZ Game Hay</h1>
+        <div class="top-left-corner">
+            <button id="updateButton" onclick="openUpdatePopup()">Kiểm tra cập nhật 2.2</button>
+        </div>
+
+        <div class="top-right-buttons">
+            <button onclick="redirectToPage1()">Đăng nhập</button>
+            <button onclick="redirectToPage2()">Đăng kí</button>
+        </div>
+
+        <div class="game-chinh">
+            <div class="game-box" id="flappyBird" onclick="redirectToGame1()">
+                <img src="flappybird.png" alt="Flappy Bird">
+                <p>Game Flappy Bird</p>
+            </div>
+            <div class="game-box" id="chessGame" onclick="redirectToGame2()">
+                <img src="chessai.png" alt="Game Cờ Vua AI">
+                <p>Game Cờ Vua AI</p>
+            </div>
+        </div>
+
+        <div class="game-row">
+            <div class="game-box" id="game3" onclick="redirectToGame3()">
+                <img src="chess2.png" alt="Game Cờ vua 2 người">
+                <p>
+                    Game Cờ Vua 2 người
+                </p>
+            </div>
+            <div class="game-box" id="game4" onclick="redirectToGame4()">
+                <img src="snake.png" alt="Game Rắn ăn cá">
+                <p>
+                    Game Rắn ăn cá
+                </p>
+            </div>
+        </div>
+
+        <div class="user-info">
+            <p>
+                Chào mừng bạn đến với ứng dụng KDZ Game Hay!
+            </p>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Thông báo cập nhật</h2>
+                <p>Cập nhật mới nhất của ứng dụng KDZ Game Hay 2.2 đã được phát hành.</p>
+                <p>Lưu ý: Hãy kiểm tra tình trạng ứng dụng của bạn và nhấn "Tiếp tục" để được chuyển hướng đến trang tải về cập nhật mới nhất.</p>
+                <button onclick="closeUpdatePopup()">Tiếp tục</button>
+            </div>
+        </div>
+    </div>
+    <script src="testwwebbx.js"></script>
+</body>

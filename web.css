@@ -1,0 +1,239 @@
+.corner-buttons {
+    position: fixed;
+    top: 2vw; /* thay đổi top để phản ánh về viewport width */
+    left: 2vw; 
+    display: flex;
+    flex-direction: column;
+}
+
+.corner-buttons button {
+    margin-bottom: 2vw; /* thay đổi margin để phản ánh về viewport width */
+    background-color: #4CAF50;
+    color: white;
+    padding: 1vw; /* thay đổi padding để phản ánh về viewport width */
+    border: none;
+    cursor: pointer;
+}
+
+.corner-buttons button:hover {
+    background-color: #45a049;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #aeeaff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 4vh; /* thay đổi margin để phản ánh về viewport height */
+}
+
+.orange-text {
+    color: orange;
+    margin-top: 130vh; /* thay đổi margin để phản ánh về viewport height */
+}
+
+.user-info {
+    color: rgb(195, 0, 255);
+    margin-top: 2vh; /* thay đổi margin để phản ánh về viewport height */
+    margin-bottom: 5vh; /* thay đổi margin để phản ánh về viewport height */
+}
+
+.top-right-buttons {
+    position: fixed;
+    top: 2vw; /* thay đổi top để phản ánh về viewport width */
+    right: 2vw; /* thay đổi right để phản ánh về viewport width */
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.top-right-buttons button {
+    margin-right: 2vw; /* thay đổi margin để phản ánh về viewport width */
+    padding: 1vw; /* thay đổi padding để phản ánh về viewport width */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.top-right-buttons button:hover {
+    background-color: #45a049;
+}
+
+.nghe-nhac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    max-width: 40vw; /* Thay đổi giá trị này tùy thuộc vào nhu cầu của bạn */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    overflow: hidden;
+  }
+
+.nghe-nhac img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /*Thêm đường cong cho ảnh */
+}
+
+.nghe-nhac p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff00f2;
+    background-color: #fff;
+    padding: 3vw; /* thay đổi padding để phản ánh về viewport width */
+    margin: 1w; /* thay đổi margin để phản ánh về viewport width */
+}
+
+.game-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2vh; /* thay đổi margin để phản ánh về viewport height */
+    margin-bottom: 0px;
+}
+
+.game-box {
+    background-color: #fff;
+    padding: 3vw; /* thay đổi padding để phản ánh về viewport width */
+    margin: 1w; /* thay đổi margin để phản ánh về viewport width */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    max-width: 12vw; /* thay đổi max-width để phản ánh về viewport width */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game-box:hover {
+    transform: scale(1.1);
+}
+
+.game-box img {
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.top-left-corner {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#updateButton {
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#updateButton:hover {
+    background-color: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Tùy chỉnh theo kích thước mong muốn */
+    border-radius: 10px;
+}
+
+.modal-content p {
+    color: red;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #555;
+}
+
+h2 {
+    color: #18fd23;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2508ca;
+}
+
+hr {
+    border: 0.5px solid #130b79;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.fade {
+    animation: fade 0.3s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}

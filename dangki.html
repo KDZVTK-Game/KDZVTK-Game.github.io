@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Register</title>
+  <style>
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #ecf0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #loginForm, #registerForm {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #3498db;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #bdc3c7;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .error {
+      color: #e74c3c;
+    }
+
+    .success {
+      color: #2ecc71;
+    }
+
+    #loginForm, #registerForm {
+      width: 300px;
+    }
+
+    .show-password {
+      display: inline-block;
+      margin-left: 5px;
+      color: #7f8c8d;
+      cursor: pointer;
+    }
+
+    #loginGmail, #registerGmail {
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+  <body>
+
+    <div id="registerForm">
+        <h2>Đăng kí</h2>
+        <p id="registerMessage" class="error"></p>
+        <form onsubmit="return register()">
+          <label for="registerGmail">Gmail:</label>
+          <input type="email" id="registerGmail" required>
+          <br>
+          <label for="verifyCode">Mã dự phòng</label>
+          <input type="text" id="verifyCode" required>
+          <br>
+          <label for="registerPassword">Mật khẩu</label>
+          <input type="password" id="registerPassword" required>
+          <span class="show-password" onclick="togglePassword('registerPassword')">Hiện mật khẩu</span>
+          <br>
+          <button type="submit">Đăng kí</button>
+          <p><a href="#dangnhap" onclick="login()">Đã có acc ? Đăng Nhập</a></p>
+        </form>
+        <p id="registerMessage" class="error"></p>
+      </div>
+
+  </body>
+  <script src="dangki.js"></script>
+</html>

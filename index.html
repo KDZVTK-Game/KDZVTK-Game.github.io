@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDZ Game Hay</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="orange-text">KDZVTK - Game Hay</h1>
+        <div class="user-info" id="user-info">
+        </div>
+
+        <div class="top-left-corner">
+            <button id="updateButton" onclick="openUpdatePopup()">Cập nhật 3.5</button>
+        </div>
+
+        <div class="top-right-buttons">
+            <button onclick="redirectToPage1()">Đăng nhập</button>
+            <button onclick="redirectToPage2()">Đăng kí</button>
+        </div>
+
+
+        <div class="game-row">
+            <div class="game-box" id="flappyBird" onclick="redirectToGame1()">
+                <img src="flappybird.png" alt="Flappy Bird">
+                <p>Game Flappy Bird</p>
+            </div>
+            <div class="game-box" id="chessGame" onclick="redirectToGame2()">
+                <img src="chessai.png" alt="Game Cờ Vua AI">
+                <p>Game Cờ Vua AI</p>
+            </div>
+        </div>
+
+        <div class="game-row">
+            <div class="game-box" id="game3" onclick="redirectToGame3()">
+                <img src="chess2.png" alt="Game Cờ vua 2 người">
+                <p>Cờ vua 2 người</p>
+            </div>
+            <div class="game-box" id="game4" onclick="redirectToGame4()">
+                <img src="xoai.png" alt="Game Cờ caro ( X / O ) AI">
+                <p>Cờ caro ( X / O ) AI</p>
+            </div>
+        </div>
+
+        <div class="game-row">
+            <div class="game-box" id="game5" onclick="redirectToGame5()">
+                <img src="xo2.png" alt="Game Cờ caro ( X / O ) 2 người">
+                <p>Cờ caro 2 người</p>
+            </div>
+            <div class="game-box" id="game6" onclick="redirectToGame6()">
+                <img src="ransanmoi.png" alt="Game Rắn săn mồi">
+                <p>Rắn săn mồi</p>
+            </div>
+        </div>
+
+        <div class="nghe-nhac">
+            <div class="game-chinh" id="game7" onclick="redirectToNhac()">
+                <img src="Phatnhac.png" alt="Nghe nhạc">
+                <p>Trang web nghe nhạc</p>
+            </div>
+        </div>
+
+        <div id="updateModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeUpdatePopup()">&times;</span>
+                <h2>Cập nhật 3.5</h2>
+                <hr>
+                <ul>
+                    <li>Sửa máy chủ</li>
+                    <li>Không cần đăng nhặp với một số game</li>
+                    <li>Thêm 7 nhạc mới</li>
+                </ul>
+                <hr>
+                <p>Cảm ơn đã trải nghiệm trang web.</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="web.js"></script>
+</body>
+</html>

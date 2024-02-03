@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ADD8E6; /* Màu xanh dương nhạt */
+        }
+        #back-button {
+            width: 100px;
+            height: 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #score, #message {
+            background-color: yellow;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        #message {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gamezone" width="900" height="500"></canvas>
+    <p id="score">Score: 0</p>
+    <p id="message"></p>
+    <button id="back-button" onclick="resetGame()">Hard core</button>
+    <script src="flappybird.js"></script>
+</body>
+</html>
