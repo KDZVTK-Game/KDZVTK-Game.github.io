@@ -9,7 +9,7 @@ const title = document.getElementById("title");
 const cover = document.getElementById("cover");
 
 // Songs Titles
-const songs = ["Tò tí te - Wren Evans", "Tát Nhật Lãng rực rỡ", "Hoa cỏ lau", "Sneaky Snitch", "2 Phut hon", "Nhất Tiếu Giang Hồ", "Firefly", "Oshi no ko", "FreeMan x Low", "FreeMan x Low x Zoli", "Don't Ya"];
+const songs = ["Tò tí te - Wren Evans", "Tát Nhật Lãng rực rỡ", "Hoa cỏ lau", "Sneaky Snitch", "2 Phut Hon", "Nhất Tiếu Giang Hồ", "Firefly", "Oshi no ko", "FreeMan x Low", "FreeMan x Low x Zoli", "Don't Ya"];
 
 // Keep track of song
 let songIndex = 0;
