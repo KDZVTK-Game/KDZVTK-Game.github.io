@@ -23,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f30f08; 
+    background-color: #08b0f3; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,14 +38,11 @@ body {
 }
 
 .orange-text {
-    color: orange;
+    color: rgb(247, 162, 4);
     margin-top: 130vh; /* thay đổi margin để phản ánh về viewport height */
 }
 
-.red-text {
-    color: red;
-    margin-top: 130vh; /* thay đổi margin để phản ánh về viewport height */
-}
+/* khu vực redtext tết */
 
 .user-info {
     color: rgb(195, 0, 255);
